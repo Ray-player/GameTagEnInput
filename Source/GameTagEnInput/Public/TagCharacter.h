@@ -38,6 +38,9 @@ public:
 public:
 	UPROPERTY(EditDefaultsOnly,Category="Input")
 	UInputConfig* InputConfig;
+
+	//UFUNCTION(BlueprintCallable, Category = "Input")
+	//void BindInputEventByTag(const FGameplayTag& InputTag, ETriggerEvent TriggerEvent);
 	
 	void Input_Move(const FInputActionValue& InputActionValue);
 
